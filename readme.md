@@ -8,7 +8,7 @@
 
 This repository contains the implementation and experimental framework for our paper on trust-based blockchain IoT security using reinforcement learning.
 
-## 📋 Abstract
+## Abstract
 
 We present a trust-based delegated consensus framework integrating Fully Homomorphic Encryption (FHE) with Attribute-Based Access Control (ABAC), combined with learning-based defense mechanisms. We systematically compare three reinforcement learning approaches—tabular Q-learning (RL), Deep RL with Dueling Double DQN (DRL), and Multi-Agent RL (MARL)—against five distinct attack families.
 
@@ -22,7 +22,7 @@ We present a trust-based delegated consensus framework integrating Fully Homomor
 | BFI (Byzantine) | **1.00** | **1.00** | **1.00** | All |
 | TDP (Temporal) | 0.16 | 0.16 | 0.11 | None effective |
 
-## 🏗️ Architecture
+## Architecture
 
 ```
 ┌─────────────────────────────────────────────────────────────┐
@@ -39,7 +39,7 @@ We present a trust-based delegated consensus framework integrating Fully Homomor
 └─────────────────────────────────────────────────────────────┘
 ```
 
-## 📁 Repository Structure
+## Repository Structure
 
 ```
 .
@@ -69,7 +69,7 @@ We present a trust-based delegated consensus framework integrating Fully Homomor
 └── Research_paper_latex_code/  # LaTeX source
 ```
 
-## 🚀 Quick Start
+## Quick Start
 
 ### Prerequisites
 
@@ -115,7 +115,7 @@ python compare_agents.py
 python generate_paper_figures.py --results_dir ./results --output_dir ./images
 ```
 
-## 🎯 Attack Models
+## Attack Models
 
 ### 1. Naive Malicious Attack (NMA)
 Independent malicious nodes randomly disrupt trust evaluations without coordination.
@@ -132,7 +132,7 @@ Equivocation attacks with Sybil amplification and eclipse attacks to split conse
 ### 5. Time-Delayed Poisoning (TDP)
 Sleeper agents that behave honestly to build trust before launching coordinated attacks at episode 25.
 
-## 🤖 Learning Agents
+## Learning Agents
 
 | Agent | Description | Best Against |
 |-------|-------------|--------------|
@@ -151,7 +151,7 @@ Sleeper agents that behave honestly to build trust before launching coordinated 
 ### TDP Attack Effect
 ![TDP Collapse](images/tdp_reward_comparison.png)
 
-## 🔧 Configuration
+## Configuration
 
 Key parameters in `parameters.py`:
 
@@ -163,7 +163,7 @@ EPISODES = 50             # Training episodes (100 for TDP)
 STEPS_PER_EPISODE = 30    # Steps per episode
 ```
 
-## 📈 Reproducing Results
+## Reproducing Results
 
 To reproduce all results from the paper:
 
@@ -176,7 +176,7 @@ python main.py --run_all --seed 42
 python generate_paper_figures.py --results_dir ./results --output_dir ./new_res --nodes 16
 ```
 
-## 📄 Citation
+## Citation
 
 If you use this code in your research, please cite:
 
@@ -189,21 +189,21 @@ If you use this code in your research, please cite:
 }
 ```
 
-## 📜 License
+## License
 
 This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
 
-## 🙏 Acknowledgments
+## Acknowledgments
 
 - Northeastern University
 - Dwarkadas J. Sanghvi College of Engineering
 
-## 📧 Contact
+## Contact
 
 - Soham Padia - padia.so@northeastern.edu
 - Dhananjay Vaidya - dhananjayvaidya4154@gmail.com
 - Ramchandra Mangrulkar - ramchandra.mangrulkar@djcse.ac.in
 
-## ⚠️ Ethical Considerations
+## Ethical Considerations
 
 This research documents attack mechanisms for defensive purposes. The attacks exploit fundamental properties of trust systems rather than specific implementation vulnerabilities. Real-world deployment of such attacks may violate computer fraud laws.
