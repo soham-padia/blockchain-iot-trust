@@ -26,16 +26,16 @@ We present a trust-based delegated consensus framework integrating Fully Homomor
 
 ```
 ┌─────────────────────────────────────────────────────────────┐
-│                   Blockchain IoT System                      │
+│                   Blockchain IoT System                     │
 ├─────────────────────────────────────────────────────────────┤
 │  IoT Nodes ──► ABAC ──► FHE Engine ──► Trust Management     │
-│       │                                      │               │
-│       ▼                                      ▼               │
+│       │                                      │              │
+│       ▼                                      ▼              │
 │  Transactions ──► Delegate Selection ──► Consensus Protocol │
-│                          ▲                                   │
-│                          │                                   │
-│                   RL/DRL/MARL Agent                          │
-│                   (Adjust delegation ratio)                  │
+│                          ▲                                  │
+│                          │                                  │
+│                   RL/DRL/MARL Agent                         │
+│                   (Adjust delegation ratio)                 │
 └─────────────────────────────────────────────────────────────┘
 ```
 
